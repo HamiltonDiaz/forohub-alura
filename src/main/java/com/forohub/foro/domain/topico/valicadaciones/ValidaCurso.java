@@ -1,6 +1,6 @@
 package com.forohub.foro.domain.topico.valicadaciones;
 
-import com.forohub.foro.domain.Curso.CursoRepository;
+import com.forohub.foro.domain.curso.CursoRepository;
 import com.forohub.foro.domain.topico.DatosRegistroTopico;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

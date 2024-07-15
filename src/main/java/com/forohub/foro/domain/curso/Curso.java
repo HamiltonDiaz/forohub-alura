@@ -1,4 +1,4 @@
-package com.forohub.foro.domain.Curso;
+package com.forohub.foro.domain.curso;
 
 import com.forohub.foro.domain.base.Base;
 import com.forohub.foro.domain.topico.Topico;

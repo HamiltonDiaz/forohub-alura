@@ -7,5 +7,6 @@ public enum StatusTopico {
     NO_RESUELTO,
     EN_ESPERA,
     DUPLICADO,
-    DESTACADO
+    DESTACADO,
+    ELIMINADO
 }

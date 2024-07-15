@@ -1,7 +1,7 @@
 package com.forohub.foro.domain.topico;
 
 
-import com.forohub.foro.domain.Curso.Curso;
+import com.forohub.foro.domain.curso.Curso;
 import com.forohub.foro.domain.base.Base;
 import com.forohub.foro.domain.respuesta.Respuesta;
 import jakarta.persistence.*;
