@@ -9,4 +9,12 @@ public record DatosDetalleTopico(
         String mensaje,
         LocalDateTime fechaCreacion
 ) {
+    public DatosDetalleTopico(Topico topico) {
+        this(
+            topico.getId(),
+            topico.getTitulo(),
+            topico.getMensaje(),
+            topico.getFechaDeCreacion()
+        );
+    }
 }

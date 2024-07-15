@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @MappedSuperclass
 @Getter
@@ -16,6 +17,6 @@ public class Base {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDate fechaDeCreacion;
-    private LocalDate fechaDeModificacion;
+    private LocalDateTime fechaDeCreacion;
+    private LocalDateTime fechaDeModificacion;
 }

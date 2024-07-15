@@ -18,14 +18,15 @@ import java.util.List;
 @NoArgsConstructor //Lombok para crear un constructor sin atributos
 @AllArgsConstructor //Lombok para crear un constructor con todos los atributos
 @EqualsAndHashCode(of="id") // para que compara los usuarios con el id
-public class Usuario {
+public class Usuario implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String login;
+    private String nombre;
+    private String correoElectronico;
     private String clave;
 
-/*    @Override
+    @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority("ROLE_USER"));
     }
@@ -37,7 +38,7 @@ public class Usuario {
 
     @Override
     public String getUsername() {
-        return this.login;
+        return this.correoElectronico;
     }
 
     @Override
@@ -63,7 +64,7 @@ public class Usuario {
         //Retorna true por defecto
         return UserDetails.super.isEnabled();
 
-    }*/
+    }
 
 
 }
